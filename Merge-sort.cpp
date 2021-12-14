@@ -11,11 +11,11 @@ void Merge(int arr[], int l, int mid, int h){
     int b[m];
 
     for(int i=0;i<n;i++){
-        a[i]=a[l+i];
+        a[i]=arr[l+i];
     }
 
     for(int i=0;i<m;i++){
-        b[i]=b[mid+1+i];
+        b[i]=arr[mid+1+i];
     }
 
 
