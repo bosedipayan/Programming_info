@@ -4,7 +4,7 @@ using namespace std;
 
 void Merge(int arr[], int l, int mid, int h){
 
-    int n=mid+1-l;
+    int n=mid-l+1;
     int m=h-mid;
 
     int a[n];
@@ -51,7 +51,7 @@ void Merge(int arr[], int l, int mid, int h){
 void MergeSort(int arr[] ,int l,int h)
 {
     if(l<h){
-        int mid = l+h/2;
+        int mid = (l+h)/2;
 
         MergeSort(arr ,l , mid);
         MergeSort(arr , mid+1, h);
